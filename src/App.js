@@ -1,10 +1,9 @@
-// src/App.js
 import React, { useState } from "react";
 import Login from "./Login";
 import Timeline from "./Timeline";
 import Channel from "./Channel";
 import DiscordVoice from "./DiscordVoice";
-import "./styles.css"; // CSSを読み込む
+import "./styles.css"; // 相対パスで読み込む
 
 function App() {
   const [user, setUser] = useState(null);
@@ -12,7 +11,7 @@ function App() {
   if (!user) return <Login onLogin={setUser} />;
 
   return (
-    <div id="root">
+    <div className="app-container">
       <div className="sidebar">
         <h2>SNS</h2>
         <p>{user.displayName}</p>
@@ -27,4 +26,3 @@ function App() {
 }
 
 export default App;
-
