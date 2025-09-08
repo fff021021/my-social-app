@@ -1,17 +1,17 @@
 import React from "react";
-import { auth, provider }from"./firebaseConfig";
-import { signInWithPopup }from"firebase/auth";
+import { auth, provider } from "./firebaseConfig";
+import { signInWithPopup } from "firebase/auth";
 
-function Longin({ onLogin}){
+function Login({ onLogin }) {
     const loginWithGoogle = () => {
-        signInWithPopup(auth,provider)
-        .then((result) => {
-            onLogin(result.user);
-        })
-        .catch((error) => console.error(error));
+        signInWithPopup(auth, provider)
+            .then((result) => {
+                onLogin(result.user);
+            })
+            .catch((error) => console.error(error));
     };
 
-    return(
+    return (
         <div>
             <button onClick={loginWithGoogle}>Login With Google</button>
         </div>

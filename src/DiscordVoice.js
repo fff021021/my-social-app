@@ -7,7 +7,7 @@ function DiscordVoice({ channelId }) {
     // 環境変数からClient IDを取得
     const clientId = process.env.REACT_APP_DISCORD_CLIENT_ID;
 
-    const client = new Client({ clientId });
+    const client = createClient();
 
     client.on("ready", () => {
       console.log("Discord SDK Ready");
