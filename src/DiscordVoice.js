@@ -4,7 +4,10 @@ import { Client } from "@discord/embedded-app-sdk";
 
 function DiscordVoice({ channelId }) {
   useEffect(() => {
-    const client = new Client({ clientId: "YOUR_DISCORD_CLIENT_ID" });
+    // 環境変数からClient IDを取得
+    const clientId = process.env.REACT_APP_DISCORD_CLIENT_ID;
+
+    const client = new Client({ clientId });
 
     client.on("ready", () => {
       console.log("Discord SDK Ready");
@@ -26,3 +29,4 @@ function DiscordVoice({ channelId }) {
 }
 
 export default DiscordVoice;
+
