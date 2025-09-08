@@ -1,0 +1,75 @@
+/* src/styles.css */
+
+/* 全体 */
+body {
+  margin: 0;
+  font-family: "Poppins", "Hiragino Sans", sans-serif;
+  background: linear-gradient(135deg, #ffb6f2, #9fdcff);
+  color: #333;
+}
+
+/* アプリ全体 */
+#root {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+/* サイドバー */
+.sidebar {
+  width: 220px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+  border-right: 2px solid #fff;
+  padding: 20px;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* メイン画面 */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* 投稿ボックス */
+input, button {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+input {
+  flex: 1;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+button {
+  background: linear-gradient(90deg, #ff91e7, #6dc9ff);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* 投稿リスト */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.7);
+}

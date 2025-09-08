@@ -1,0 +1,25 @@
+{
+  "name": "my-social-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@discord/embedded-app-sdk": "^2.2.0",
+    "@firebase/app": "^0.14.1",
+    "@firebase/auth": "^1.11.0",
+    "@firebase/firestore": "^4.9.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "firebase": "^12.1.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  }
+}
