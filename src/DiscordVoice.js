@@ -1,6 +1,6 @@
 // src/DiscordVoice.js
 import React, { useEffect } from "react";
-import { Client } from "@discord/embedded-app-sdk";
+import { createClient } from "@discord/embedded-app-sdk";
 
 function DiscordVoice({ channelId }) {
   useEffect(() => {
